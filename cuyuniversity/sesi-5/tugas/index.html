@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS SESI 5</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="contanier">
+        <!-- form daftar -->
+        <div id="formDaftar">
+            <h1>SILAHKAN LAKUKAN PENDAFTARAN</h1>
+            <input type="text" placeholder="username" id="usernameDaftarInput"><br><br>
+            <input type="password" placeholder="password" id="passwordDaftarInput"><br><br>
+            <button onclick="onDaftar()" id="buttonDaftar">Daftar</button>
+            <p id="acceptReg">Sudah memiliki akun? Silahkan <span id="textLogin">Login</span></p>
+            <!-- <button onclick="onLogout()" id="buttonLogout">LOGOUT</button> -->
+        </div>
+        <!-- form daftar end -->
+
+        <!-- form login -->
+        <div id="formLogin"> 
+            <h1>SILAHKAN LOGIN</h1>
+            <input type="text" placeholder="username" id="usernameInput"><br><br>
+            <input type="password" placeholder="password" id="passwordInput"><br><br>
+            <button onclick="onLogin()" id="buttonLogin">Login</button>
+            <p id="goDaftar">Belum memiliki akun? Silahkan <span id="textDaftar">Daftar</span></p>
+        </div>
+        <!-- form login end -->
+        <button onclick="onLogout()" id="buttonLogout">LOGOUT</button>
+        <!-- daftar login end -->
+
+        <!-- admin dashboard -->
+         <div class="admindashboard">
+            <h1>WELCOME TO ADMIN DASHBOARD</h1>
+         </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

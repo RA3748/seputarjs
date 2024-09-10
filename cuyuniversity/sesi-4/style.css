@@ -1,0 +1,71 @@
+body {
+    background-color: #232830;
+}
+
+.ruangankeluarga {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    left: 400px;
+    padding: 50px;
+    background-color: white;
+    width: 500px;
+}
+
+.ruangankeluarga h1 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.ruangmakan {
+    position: relative;
+    left: 100px;
+    background-color: tomato;
+    width: 300px;
+}
+
+.ruangmakan h1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.ruangtidur {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 400px;
+    top: -322px;
+    background-color: gray;
+    width: 400px;
+    height: 322px;
+    padding: 10px;
+}
+
+.ruangtidur h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.ruangtamu {
+    position: relative;
+    left: 320px;
+    top: -322px;
+    background-color: rgb(87, 97, 117);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 650px;
+}
+
+.ruangtamu h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
