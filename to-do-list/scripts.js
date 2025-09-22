@@ -9,6 +9,37 @@ for(let i = 0; i < arrayTodo.length; i++) {
     CreateList(arrayTodo[i]);
 }
 
+function showAlert(text) {
+  let AletNotif = document.createElement('div');
+  let textAlert = document.createElement('p');
+  let btnAlert = document.createElement('button');
+
+  AletNotif.className = 'alert-notif';
+  textAlert.className = 'text-alert';
+  btnAlert.className = 'btn-alert';
+
+  textAlert.innerText = text;
+  btnAlert.innerText = 'Close';
+
+  btnAlert.onclick = () => {
+    AletNotif.style.opacity = '0';
+    AletNotif.style.transform = 'translate(-50%, -50%) scale(0.8)';
+    setTimeout(() => AletNotif.remove(), 300);
+  };
+
+  AletNotif.appendChild(textAlert);
+  AletNotif.appendChild(btnAlert);
+  document.body.appendChild(AletNotif);
+
+  setTimeout(() => AletNotif.classList.add('show'), 100);
+
+  setTimeout(() => {
+    AletNotif.style.opacity = '0';
+    AletNotif.style.transform = 'translate(-50%, -50%) scale(0.8)';
+    setTimeout(() => AletNotif.remove(), 300);
+  }, 4000);
+}
+
 function CreateTodo() {
 
     let text = todoInput.value;
@@ -24,11 +55,11 @@ function CreateTodo() {
             todoInput.value = '';
 
         } else {
-            alert('Text tidak boleh lebih dari 25 karakter!');
+            showAlert('Text tidak boleh lebih dari 25 karakter!');
         }
 
     } else {
-        alert('Text tidak boleh kosong!');
+        showAlert('Text tidak boleh kosong!');
     }
     return 1;
 

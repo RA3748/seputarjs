@@ -5,7 +5,7 @@
   font-family: Arial, sans-serif;
 }
 
-body {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@ body {
   color: #fff;
 }
 
-.container {
+.wrapper {
   width: 350px;
   background: #1e1e1e; /* abu gelap */
   padding: 20px;
@@ -101,4 +101,51 @@ ul li .done-btn {
 ul li.done span {
   text-decoration: line-through;
   color: gray;
+}
+
+.alert-notif {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background-color: #ffffff;
+  color: #121212;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #d6d6d6;
+  z-index: 1000;
+  max-width: 300px;
+  white-space: normal;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.alert-notif.show {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.alert-notif .text-alert {
+  font-size: 25px;
+  max-width: 20ch;
+  white-space: normal;
+}
+
+.alert-notif .btn-alert {
+  background-color: rgb(56, 194, 194);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.alert-notif .btn-alert:hover {
+  background-color: #00cccc;
+  transition: background-color 0.3s ease;
 }
